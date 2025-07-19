@@ -1,54 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Kesia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
 </head>
 <body>
   <header>
-    <h1>Olá! Eu sou Kesia</h1>
-    <button onclick="mudarTema()">Mudar tema</button>
+    <nav class="navbar">
+      <div class="logo">Kesia Dev</div>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <!-- Imagem da profissional -->
-    <section id="foto">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaUI5Lx1F2bigVUJ5YgXGW0RAHksOpqWv6Lg&s" alt="Foto da Kesia" id="foto-perfil">
-    </section>
-
-    <!-- Sobre mim -->
     <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>Sou apaixonada por tecnologia e estou criando meu primeiro site!</p>
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.linkedin.com%2Fin%2Fkesiasalgado&psig=AOvVaw0ryqoqXiJ8tU_dUhSb2fw9&ust=1753013719593000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOjWpJLzyI4DFQAAAAAdAAAAABAE" alt="Foto da Kesia" class="foto-perfil"></src>
+      <h1>Olá! Eu sou a Kesia 👋</h1>
+      <p>Profissional em transição para o mundo da tecnologia, com experiência em gestão, projetos e inovação.</p>
     </section>
 
-    <!-- Projetos -->
+    <section id="tecnologias">
+      <h2>💡 Ferramentas que utilizo</h2>
+      <div id="icon-container" class="icons"></div>
+      <button onclick="mostrarFerramentas()">Mostrar Tecnologias</button>
+    </section>
+
     <section id="projetos">
-      <h2>Projetos</h2>
-      <ul id="lista-projetos"></ul>
-      <button onclick="mostrarProjetos()">Mostrar projetos</button>
+      <h2>📁 Meus Projetos</h2>
+      <p>Projetos desenvolvidos durante minha jornada de aprendizado e formação.</p>
     </section>
 
-    
-    <!-- Ferramentas -->
-    <section id="ferramentas">
-      <h2>Ferramentas que uso</h2>
-      <div id="lista-ferramentas"></div>
-      <button onclick="mostrarFerramentas()">Mostrar ferramentas</button>
+    <section id="contato">
+      <h2>📞 Contato</h2>
+      <p>Me chame nas redes sociais ou no WhatsApp!</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/seulinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Kesia Salgado</p>
-    <p>
-      <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/seuusuario" target="_blank">GitHub</a> |
-      <a href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
-    </p>
+    <p>&copy; 2025 Kesia Salgado. Todos os direitos reservados.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
