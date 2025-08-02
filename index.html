@@ -1,57 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio Kesia</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebWeaver Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Kesia Dev</div>
-      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
-      <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#tecnologias">Tecnologias</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="sobre">
-      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.linkedin.com%2Fin%2Fkesiasalgado&psig=AOvVaw0ryqoqXiJ8tU_dUhSb2fw9&ust=1753013719593000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOjWpJLzyI4DFQAAAAAdAAAAABAE" alt="Foto da Kesia" class="foto-perfil"></src>
-      <h1>Olá! Eu sou a Kesia 👋</h1>
-      <p>Profissional em transição para o mundo da tecnologia, com experiência em gestão, projetos e inovação.</p>
-    </section>
+    <header>
+        <div class="container">
+            <h1>WebWeaver Portfolio</h1>
+        </div>
+    </header>
 
-    <section id="tecnologias">
-      <h2>💡 Ferramentas que utilizo</h2>
-      <div id="icon-container" class="icons"></div>
-      <button onclick="mostrarFerramentas()">Mostrar Tecnologias</button>
-    </section>
+    <main class="container">
+        <section id="hero">
+            <div class="hero-text">
+                <h2>Construindo a Web, Uma Linha de Código de Cada Vez</h2>
+                <p>Bem-vindo à minha oficina digital. Explore meus projetos, confira minhas habilidades e veja como posso dar vida às suas ideias na web.</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://placehold.co/550x550.png" alt="Ilustração abstrata de código" data-ai-hint="abstract code">
+            </div>
+        </section>
 
-    <section id="projetos">
-      <h2>📁 Meus Projetos</h2>
-      <p>Projetos desenvolvidos durante minha jornada de aprendizado e formação.</p>
-    </section>
+        <section id="portfolio">
+            <h2>Meus Trabalhos Criativos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="HTML">HTML</button>
+                <button class="filter-btn" data-filter="CSS">CSS</button>
+                <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Os projetos serão inseridos aqui pelo JavaScript -->
+            </div>
+        </section>
 
-    <section id="contato">
-      <h2>📞 Contato</h2>
-      <p>Me chame nas redes sociais ou no WhatsApp!</p>
-      <ul class="social-links">
-        <li><a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/seulinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-      </ul>
-    </section>
-  </main>
+        <section id="tech-stack">
+            <h2>Meu Kit de Ferramentas Digitais</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_128.png" alt="HTML5 Logo" class="tech-logo">
+                    <h3>HTML</h3>
+                    <p>A espinha dorsal da web. Crio marcação semântica e estruturada para qualquer conteúdo.</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/120px-CSS3_logo_and_wordmark.svg.png" alt="CSS3 Logo" class="tech-logo">
+                    <h3>CSS</h3>
+                    <p>A arte da web. Desenvolvo layouts responsivos e estilizações atraentes para encantar os usuários.</p>
+                </div>
+                <div class="tech-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png" alt="JavaScript Logo" class="tech-logo">
+                    <h3>JavaScript</h3>
+                    <p>O motor da web. Construo experiências de usuário dinâmicas e interativas que dão vida às páginas.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Kesia Salgado. Todos os direitos reservados.</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 WebWeaver Portfolio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
