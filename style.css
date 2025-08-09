@@ -10,6 +10,11 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+#titulo-digitado::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+
 .container {
     width: 90%;
     max-width: 1100px;
@@ -120,6 +125,8 @@ section {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .filter-btn:hover, .filter-btn.active {

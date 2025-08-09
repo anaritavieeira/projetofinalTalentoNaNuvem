@@ -1,7 +1,26 @@
+    const h2 = document.getElementById("titulo-digitado");
+        const texto = h2.textContent;
+        h2.textContent = ""; // Limpa o texto inicial
+        let i = 0;
+
+    function digitar() {
+        if (i < texto.length) {
+        h2.textContent += texto.charAt(i);
+        i++;
+        setTimeout(digitar, 100);
+        }
+    }
+
+    window.onload = function() {
+    digitar();
+    };
+
 /**
  * Função executada quando o conteúdo do DOM (a estrutura da página) é totalmente carregado.
  * Ela garante que nosso código JavaScript só rode depois que todos os elementos HTML estiverem prontos.
  */
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Array de objetos que contém as informações de cada projeto do portfólio.
@@ -18,21 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
             description: 'Plataforma de conexão entre prestadores de serviço e oportunidades de trabalho, com foco em inclusão social e geração de renda.',
             image: 'img/em-brevebranco.jpg',
             tags: ['Protótipo', 'Figma', 'UX'],
-            dataAiHint: 'analytics chart'
+            dataAiHint: 'project'
         },
         {
             title: 'SOS Pet',
             description: 'Solução para facilitar o acesso a informações do mundo Pet, como hospitais veterinários próximos e seus serviços.',
             image: 'img/em-brevebranco.jpg',
             tags: ['Protótipo', 'Figma', 'UX'],
-            dataAiHint: 'quiz game'
+            dataAiHint: 'mobile project'
         },
         {
             title: 'Swag Labs',
             description: 'Projeto voltado à análise funcional e elaboração de casos de teste para um site utilizado em práticas de testes automatizados.',
             image: 'img/em-brevebranco.jpg',
             tags: ['BDD', 'Selenium', 'Behave', 'Python', 'QA'],
-            dataAiHint: 'personal website'
+            dataAiHint: 'test project'
         }
     ];
 
