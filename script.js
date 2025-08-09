@@ -7,31 +7,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Array de objetos que contém as informações de cada projeto do portfólio.
     const projects = [
         {
-            title: 'Site de E-commerce',
-            description: 'Uma plataforma de e-commerce moderna construída com foco em HTML e CSS.',
-            image: 'https://placehold.co/600x400.png',
-            tags: ['HTML', 'CSS'],
+            title: 'Fábrica de Ideias',
+            description: 'Aplicação web voltada para projeto de empreendedorismo local que reutiliza resíduos têxteis para criar produtos e brinquedos sustentáveis.',
+            image: 'img/em-brevebranco.jpg',
+            tags: ['HTML', 'CSS', 'JavaScript', 'React Router'],
             dataAiHint: 'online store'
         },
         {
-            title: 'Dashboard de Dados',
-            description: 'Um painel dinâmico para visualização de dados, com filtros criados com JavaScript.',
-            image: 'https://placehold.co/600x400.png',
-            tags: ['HTML', 'JavaScript'],
+            title: 'Bikos',
+            description: 'Plataforma de conexão entre prestadores de serviço e oportunidades de trabalho, com foco em inclusão social e geração de renda.',
+            image: 'img/em-brevebranco.jpg',
+            tags: ['Protótipo', 'Figma', 'UX'],
             dataAiHint: 'analytics chart'
         },
         {
-            title: 'Jogo de Quiz Interativo',
-            description: 'Um aplicativo de jogo de quiz envolvente que usa JavaScript para a lógica.',
-            image: 'https://placehold.co/600x400.png',
-            tags: ['JavaScript', 'CSS'],
+            title: 'SOS Pet',
+            description: 'Solução para facilitar o acesso a informações do mundo Pet, como hospitais veterinários próximos e seus serviços.',
+            image: 'img/em-brevebranco.jpg',
+            tags: ['Protótipo', 'Figma', 'UX'],
             dataAiHint: 'quiz game'
         },
         {
-            title: 'Portfólio Pessoal',
-            description: 'Uma página única e elegante para mostrar projetos, focada em CSS avançado.',
-            image: 'https://placehold.co/600x400.png',
-            tags: ['HTML', 'CSS'],
+            title: 'Swag Labs',
+            description: 'Projeto voltado à análise funcional e elaboração de casos de teste para um site utilizado em práticas de testes automatizados.',
+            image: 'img/em-brevebranco.jpg',
+            tags: ['BDD', 'Selenium', 'Behave', 'Python', 'QA'],
             dataAiHint: 'personal website'
         }
     ];
